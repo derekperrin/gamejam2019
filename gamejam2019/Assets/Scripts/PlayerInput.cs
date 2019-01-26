@@ -25,7 +25,5 @@ public class PlayerInput : MonoBehaviour {
         Vector2 direction = new Vector2(h, v);
         direction.Normalize();
         SendMessage("Move", direction);
-
-        //SendMessage("ScrollUp");
     }
 }

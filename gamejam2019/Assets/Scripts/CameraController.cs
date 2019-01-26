@@ -13,9 +13,4 @@ public class CameraController : MonoBehaviour {
 	void Update () {
 
     }
-
-    private void FixedUpdate()
-    {
-        //SendMessage("ScrollUp");
-    }
 }

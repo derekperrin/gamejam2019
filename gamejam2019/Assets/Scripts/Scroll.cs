@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Scroll : MonoBehaviour {
 
-    public Vector2 speed;
-    public Vector2 direction;
+    private Vector2 speed;
+    private Vector2 direction;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        speed = new Vector2(0, 5);
+        direction = new Vector2(0, 1);
+    }
 	
 	// Update is called once per frame
-	void Update () {
+	private void FixedUpdate () {
         // Movement
         Vector3 movement = new Vector3(
           speed.x * direction.x,

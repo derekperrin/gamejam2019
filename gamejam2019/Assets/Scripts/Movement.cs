@@ -26,14 +26,4 @@ public class Movement : MonoBehaviour {
     {
         rbody.velocity = direction * velocity;
     }
-
-    public void ScrollUp()
-    {
-        float Y = transform.position.y;
-        float X = transform.position.x;
-
-        Y = Y + (float)0.05;
-        Vector3 NewPos = new Vector3(X, Y, 0);
-        gameObject.transform.position = NewPos;
-    }
 }
