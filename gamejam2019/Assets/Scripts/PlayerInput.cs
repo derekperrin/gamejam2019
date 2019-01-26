@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
+    private float ySpeed;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,11 +18,14 @@ public class PlayerInput : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        //Move in input direction
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
         Vector2 direction = new Vector2(h, v);
         direction.Normalize();
         SendMessage("Move", direction);
+
+        //SendMessage("ScrollUp");
     }
 }
