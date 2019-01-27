@@ -251,8 +251,14 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 405389005}
+<<<<<<< HEAD
   m_Father: {fileID: 0}
   m_RootOrder: 4
+=======
+  - {fileID: 1196093279}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+>>>>>>> development
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5018,7 +5024,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4317584841920392, guid: dc96f06809deddc45820a97806316ded, type: 2}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: -13
+=======
+      value: -13.3046875
+>>>>>>> development
       objectReference: {fileID: 0}
     - target: {fileID: 4317584841920392, guid: dc96f06809deddc45820a97806316ded, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5040,10 +5050,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 114837889844237632, guid: dc96f06809deddc45820a97806316ded,
         type: 2}
       propertyPath: asteroidInitAcceleration
       value: 1
+=======
+    - target: {fileID: 1689546321659984, guid: dc96f06809deddc45820a97806316ded, type: 2}
+      propertyPath: m_Layer
+      value: 10
+>>>>>>> development
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc96f06809deddc45820a97806316ded, type: 2}
@@ -9793,7 +9809,11 @@ Transform:
   - {fileID: 1434942701}
   - {fileID: 803355880}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 8
+>>>>>>> development
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602329700
 GameObject:
@@ -9855,7 +9875,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 7
+=======
+  m_RootOrder: 9
+>>>>>>> development
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &703336964
 Prefab:
@@ -10101,7 +10125,11 @@ Transform:
   m_LocalScale: {x: 25.397446, y: 25.397446, z: 25.397446}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 7
+>>>>>>> development
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &803355880 stripped
 Transform:
@@ -10120,6 +10148,7 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016280145}
   m_Enabled: 1
+<<<<<<< HEAD
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -10158,6 +10187,89 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaa15c95acd8ac41bf2d84fae7844ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0, y: -3}
+  asteroidInitAcceleration: 1
+--- !u!1 &1196093278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1196093279}
+  - component: {fileID: 1196093281}
+  - component: {fileID: 1196093280}
+  m_Layer: 5
+  m_Name: DistanceToHome
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1196093279
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196093278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346751974}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -914.3, y: -10}
+  m_SizeDelta: {x: 233.7, y: 30}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1196093280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196093278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 7cb2912222469634ba17a77055919ea8, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Distance to home: '
+--- !u!222 &1196093281
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196093278}
+  m_CullTransparentMesh: 0
+>>>>>>> development
 --- !u!1001 &1286981185
 Prefab:
   m_ObjectHideFlags: 0
@@ -10493,8 +10605,11 @@ GameObject:
   - component: {fileID: 1732442115}
   - component: {fileID: 1732442116}
   - component: {fileID: 1732442117}
+<<<<<<< HEAD
   - component: {fileID: 1732442114}
   - component: {fileID: 1732442109}
+=======
+>>>>>>> development
   - component: {fileID: 1732442118}
   m_Layer: 8
   m_Name: Player
@@ -10687,8 +10802,32 @@ MonoBehaviour:
   currentHealth: 0
   dmgd: 0
   dead: 0
+<<<<<<< HEAD
 --- !u!82 &1732442118
 AudioSource:
+=======
+--- !u!114 &1732442118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732442107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78e30035c618c143be85d59c460f615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiElement: {fileID: 1196093280}
+  initialDistanceToHome: 10000
+  countDownRate: 1
+--- !u!4 &1928869634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4850258776138544, guid: e2e9260805ec6d14aaa5280632895e95,
+    type: 2}
+  m_PrefabInternal: {fileID: 713768215}
+--- !u!1001 &2032894022
+Prefab:
+>>>>>>> development
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
