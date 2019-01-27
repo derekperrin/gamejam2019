@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour {
     public int startingHealth=100; // Amount of health object starts with
@@ -14,6 +15,10 @@ public class Health : MonoBehaviour {
     void Start () {
         currentHealth = startingHealth;
         dead = false;
+    }
+
+    public float GetHealth() {
+        return (float)currentHealth/startingHealth;
     }
 	
 	// Update is called once per frame
@@ -47,7 +52,7 @@ public class Health : MonoBehaviour {
         {
             Death();
         }
-
+        GetComponent<HealthUI>().UpdateHealthBar();
     }
 
     void Death()
@@ -59,6 +64,11 @@ public class Health : MonoBehaviour {
             Destroy(gameObject);
         }
         // HAVE TO TURN OFF FEATURES OF MOVEMENT AND SHOOTING HERE
+        //  --or just terminate this scene by loading a new one.
+        else if (gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            SceneManager.LoadScene("DeathScene");
+        }
     }
 
   

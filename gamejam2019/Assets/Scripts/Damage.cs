@@ -39,7 +39,6 @@ public class Damage : MonoBehaviour {
      */
     virtual protected void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Entered a collision with the bullet");
         collider.gameObject.SendMessage("ChangeHealth", -currentDamage); // make power negative because we want to take away health.
     }
 }

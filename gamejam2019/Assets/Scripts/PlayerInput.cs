@@ -17,8 +17,8 @@ public class PlayerInput : MonoBehaviour {
     private void FixedUpdate()
     {
         //Move in input direction
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
         bool fire = Input.GetButton("Fire1");
 
         Vector2 direction = new Vector2(h, v);
