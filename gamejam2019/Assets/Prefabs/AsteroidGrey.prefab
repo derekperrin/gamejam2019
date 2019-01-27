@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114664561543083520}
   - component: {fileID: 114234587189664800}
   - component: {fileID: 114281603774343558}
+  - component: {fileID: 114226763673941712}
   m_Layer: 10
   m_Name: AsteroidGrey
   m_TagString: Untagged
@@ -110,6 +111,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114226763673941712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1320479162696708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 0
+  minDamage: 0
 --- !u!114 &114234587189664800
 MonoBehaviour:
   m_ObjectHideFlags: 1
