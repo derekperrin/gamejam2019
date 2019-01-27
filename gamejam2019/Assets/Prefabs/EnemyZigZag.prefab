@@ -25,8 +25,9 @@ GameObject:
   - component: {fileID: 114682828493363832}
   - component: {fileID: 50426969316355214}
   - component: {fileID: 114911009200054662}
+  - component: {fileID: 114778878468184314}
   m_Layer: 10
-  m_Name: Enemy
+  m_Name: EnemyZigZag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,6 +103,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+--- !u!114 &114778878468184314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232840666653042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f1cd31a067d6d48acfed85558962de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  dmgd: 0
+  dead: 0
 --- !u!114 &114911009200054662
 MonoBehaviour:
   m_ObjectHideFlags: 1
