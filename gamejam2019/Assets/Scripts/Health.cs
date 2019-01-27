@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
     public int startingHealth=100; // Amount of health object starts with
+    public int scoreValue;
     [SerializeField]private int currentHealth; // current health of the object
     [SerializeField]private bool dmgd; // true when player takes damage, false otherwise
     [SerializeField]private bool dead; // true when the object should be dead
@@ -27,6 +28,7 @@ public class Health : MonoBehaviour {
     // changes current health of the object if it is not dead
     void ChangeHealth(int amount)
     {
+        Debug.Log("attempting to change health" + amount.ToString());
         if(amount < 0)
         {
             dmgd = true; //object took damage
@@ -51,7 +53,10 @@ public class Health : MonoBehaviour {
     void Death()
     {
         dead = true;
-        
+        if (gameObject.layer == LayerMask.NameToLayer("Enemy")) {
+            GameObject player = GameObject.FindWithTag("Player");
+            player.SendMessage("UpdateScore", scoreValue);
+        }
         // HAVE TO TURN OFF FEATURES OF MOVEMENT AND SHOOTING HERE
     }
 

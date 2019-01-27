@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy_Enemies : MonoBehaviour {
+public class DestroyEnemies : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,9 @@ public class Destroy_Enemies : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(collision.gameObject);
+    }
 }
