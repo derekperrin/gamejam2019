@@ -19,7 +19,7 @@ public class PlayerInput : MonoBehaviour {
         //Move in input direction
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        bool fire = Input.GetButtonDown("Fire1");
+        bool fire = Input.GetButton("Fire1");
 
         Vector2 direction = new Vector2(h, v);
         direction.Normalize();
