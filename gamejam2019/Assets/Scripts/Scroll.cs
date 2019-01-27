@@ -5,6 +5,9 @@ using UnityEngine;
 public class Scroll : MonoBehaviour {
 
     public Vector2 speed;
+    public bool asteroidInitAcceleration;
+
+    private float timeBeforeAcceleration;
     private Vector2 direction;
 
     // Use this for initialization
@@ -14,6 +17,7 @@ public class Scroll : MonoBehaviour {
             speed = new Vector2(0, 5);
         }
         direction = new Vector2(0, 1);
+        timeBeforeAcceleration = 2;
     }
 	
 	// Update is called once per frame
@@ -26,5 +30,15 @@ public class Scroll : MonoBehaviour {
 
         movement *= Time.deltaTime;
         transform.Translate(movement);
+
+        //Asteroid acceleration
+        if (asteroidInitAcceleration)
+        {
+            timeBeforeAcceleration -= Time.deltaTime;
+            if (timeBeforeAcceleration < 0)
+            {
+                speed.y = -12;
+            }
+        }
     }
 }

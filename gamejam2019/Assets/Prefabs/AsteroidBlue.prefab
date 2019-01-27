@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61749257559463904}
   - component: {fileID: 114534321673312456}
   - component: {fileID: 95852035619360056}
+  - component: {fileID: 114412337657343528}
   m_Layer: 10
   m_Name: AsteroidBlue
   m_TagString: Untagged
@@ -107,6 +108,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114412337657343528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1459049856911980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaa15c95acd8ac41bf2d84fae7844ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0, y: 0}
+  asteroidInitAcceleration: 0
 --- !u!114 &114534321673312456
 MonoBehaviour:
   m_ObjectHideFlags: 1
