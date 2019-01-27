@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
-    private float ySpeed;
-
 	// Use this for initialization
 	void Start () {
 		

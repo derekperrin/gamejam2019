@@ -113,6 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!4 &23646655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4850258776138544, guid: e2e9260805ec6d14aaa5280632895e95,
@@ -359,6 +360,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4850258776138544, guid: e2e9260805ec6d14aaa5280632895e95,
     type: 2}
   m_PrefabInternal: {fileID: 708366129}
+=======
+>>>>>>> Umar-Tung
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
