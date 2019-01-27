@@ -16,6 +16,7 @@ public class PlayerInput : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        //Move in input direction
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
