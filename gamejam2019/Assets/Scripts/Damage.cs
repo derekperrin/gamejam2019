@@ -37,8 +37,9 @@ public class Damage : MonoBehaviour {
     /***
      * Sends a message to the game object that was touched to lower health by the current damage in this script (currentDamage).
      */
-    virtual protected void OnCollisionEnter2D(Collision2D collision)
+    virtual protected void OnTriggerEnter2D(Collider2D collider)
     {
-        collision.gameObject.SendMessage("ChangeHealth", -currentDamage); // make power negative because we want to take away health.
+        Debug.Log("Entered a collision with the bullet");
+        collider.gameObject.SendMessage("ChangeHealth", -currentDamage); // make power negative because we want to take away health.
     }
 }

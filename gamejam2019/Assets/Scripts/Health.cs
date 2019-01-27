@@ -56,6 +56,7 @@ public class Health : MonoBehaviour {
         if (gameObject.layer == LayerMask.NameToLayer("Enemy")) {
             GameObject player = GameObject.FindWithTag("Player");
             player.SendMessage("UpdateScore", scoreValue);
+            Destroy(gameObject);
         }
         // HAVE TO TURN OFF FEATURES OF MOVEMENT AND SHOOTING HERE
     }
