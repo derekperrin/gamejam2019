@@ -6,16 +6,16 @@ public class Bullet : Damage {
 
     virtual protected void Start()
     {
-        Invoke("Die", 3);
+        Invoke("DestroyBullet", 3);
     }
 
-    override protected void OnCollisionEnter2D(Collision2D collision)
+    override protected void OnTriggerEnter2D(Collider2D collider)
     {
-        base.OnCollisionEnter2D(collision);
-        Die();
+        base.OnTriggerEnter2D(collider);
+        DestroyBullet();
     }
 
-    virtual protected void Die()
+    virtual protected void DestroyBullet()
     {
         Destroy(this.gameObject);
     }
