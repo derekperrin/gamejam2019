@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 0, y: -3}
-  asteroidInitAcceleration: 1
+  asteroidInitAcceleration: 0
 --- !u!114 &114521544303464608
 MonoBehaviour:
   m_ObjectHideFlags: 1
