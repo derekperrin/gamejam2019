@@ -20,12 +20,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4851690270930276}
   - component: {fileID: 212104427747678302}
-  - component: {fileID: 61896588016353624}
   - component: {fileID: 114455410831868790}
   - component: {fileID: 114647553161615664}
   - component: {fileID: 50222629106118440}
   - component: {fileID: 114424708434885568}
   - component: {fileID: 114071977446247950}
+  - component: {fileID: 58455741000302136}
   m_Layer: 10
   m_Name: EnemyFollow
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141152984900962}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -5.5903306, y: 18.31478, z: 0}
+  m_LocalPosition: {x: -5.5903306, y: 61.42, z: 0}
   m_LocalScale: {x: 1.246, y: 1.114, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,8 +66,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61896588016353624
-BoxCollider2D:
+--- !u!58 &58455741000302136
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -78,19 +78,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.17, y: 2.35}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: -0.01704731, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
+  m_Radius: 1.1474544
 --- !u!114 &114071977446247950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  scoreValue: 100
   currentHealth: 0
   dmgd: 0
   dead: 0
@@ -131,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 3}
+  asteroidInitAcceleration: 0
 --- !u!114 &114647553161615664
 MonoBehaviour:
   m_ObjectHideFlags: 1
