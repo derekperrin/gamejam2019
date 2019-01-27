@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61736709686108774}
   - component: {fileID: 114790366651397626}
   - component: {fileID: 95735795595728116}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: AsteroidBrown
   m_TagString: Untagged
   m_Icon: {fileID: 0}

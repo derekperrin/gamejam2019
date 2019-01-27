@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61749257559463904}
   - component: {fileID: 114534321673312456}
   - component: {fileID: 95852035619360056}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AsteroidBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
