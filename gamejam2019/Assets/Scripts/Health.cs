@@ -52,7 +52,7 @@ public class Health : MonoBehaviour {
         {
             Death();
         }
-
+        GetComponent<HealthUI>().UpdateHealthBar();
     }
 
     void Death()

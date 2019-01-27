@@ -14,9 +14,9 @@ public class HealthUI : MonoBehaviour {
 			image.enabled = true;
 		}
 	}
-	void UpdateHealthBar(){
+	public void UpdateHealthBar(){
 		playerHealthPercentage = GetComponent<Health>().GetHealth();
-		for (int i = healthImages.Length; i > Mathf.Floor(playerHealthPercentage*healthImages.Length); i--) {
+		for (int i = healthImages.Length - 1 ; i > Mathf.Floor(playerHealthPercentage*healthImages.Length); i--) {
 			healthImages[i].enabled = false;
 		}
 	}
