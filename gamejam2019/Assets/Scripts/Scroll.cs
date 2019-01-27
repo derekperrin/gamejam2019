@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class Scroll : MonoBehaviour {
 
-    private Vector2 speed;
+    public Vector2 speed;
     private Vector2 direction;
 
     // Use this for initialization
     void Start () {
-        speed = new Vector2(0, 5);
+        if (speed.y == 0)
+        {
+            speed = new Vector2(0, 5);
+        }
         direction = new Vector2(0, 1);
     }
 	
