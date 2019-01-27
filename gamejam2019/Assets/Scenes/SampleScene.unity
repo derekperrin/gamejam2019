@@ -277,7 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d37b357746afde49929c300b2bc12bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 5
+  velocity: 7
+  radius: 0
 --- !u!1 &422270934
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,6 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 10
+  radius: 0
 --- !u!114 &1732442112
 MonoBehaviour:
   m_ObjectHideFlags: 0

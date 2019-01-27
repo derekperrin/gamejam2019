@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour {
     private Vector2 right, left;
 
     public float velocity;
+    public float radius;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,10 @@ public class Movement : MonoBehaviour {
         goingRight = true;
         right = new Vector2(1, 0);
         left = new Vector2(-1, 0);
+        if (radius == 0)
+        {
+            radius = 5;
+        }
     }
 
     public void Move(Vector2 direction)
@@ -37,7 +42,6 @@ public class Movement : MonoBehaviour {
 
     public void BackNForth(float center)
     {
-        float radius = 10;
 
         if (goingRight)
         {
