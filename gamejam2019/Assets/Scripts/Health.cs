@@ -16,6 +16,10 @@ public class Health : MonoBehaviour {
         currentHealth = startingHealth;
         dead = false;
     }
+
+    public float GetHealth() {
+        return (float)currentHealth/startingHealth;
+    }
 	
 	// Update is called once per frame
 	void Update () {
