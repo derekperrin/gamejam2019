@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114090003416185260}
   - component: {fileID: 114999728519667730}
   - component: {fileID: 58785174520527124}
+  - component: {fileID: 114728700870958672}
   m_Layer: 10
   m_Name: EnemyZigZag
   m_TagString: Untagged
@@ -75,7 +76,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.01844558, y: -0.13926107}
@@ -119,6 +120,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 3}
   asteroidInitAcceleration: 0
+--- !u!114 &114728700870958672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269100722332952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 50
+  minDamage: 50
 --- !u!114 &114999728519667730
 MonoBehaviour:
   m_ObjectHideFlags: 1

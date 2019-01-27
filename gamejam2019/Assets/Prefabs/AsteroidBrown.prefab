@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 95735795595728116}
   - component: {fileID: 114837889844237632}
   - component: {fileID: 114614347191004562}
+  - component: {fileID: 114820128434613416}
   m_Layer: 10
   m_Name: AsteroidBrown
   m_TagString: Untagged
@@ -75,7 +76,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000017881393, y: 0.006254077}
@@ -138,6 +139,20 @@ MonoBehaviour:
   currentHealth: 0
   dmgd: 0
   dead: 0
+--- !u!114 &114820128434613416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689546321659984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 50
+  minDamage: 50
 --- !u!114 &114837889844237632
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 95191483720785064}
   - component: {fileID: 114664561543083520}
   - component: {fileID: 114281603774343558}
+  - component: {fileID: 114807941027577066}
   m_Layer: 10
   m_Name: AsteroidGrey
   m_TagString: Untagged
@@ -75,7 +76,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.001934886, y: 0.002091974}
@@ -151,6 +152,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 0}
   asteroidInitAcceleration: 0
+--- !u!114 &114807941027577066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1320479162696708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 50
+  minDamage: 50
 --- !u!212 &212769481410746844
 SpriteRenderer:
   m_ObjectHideFlags: 1
