@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  scoreValue: 10
   currentHealth: 0
   dmgd: 0
   dead: 0
