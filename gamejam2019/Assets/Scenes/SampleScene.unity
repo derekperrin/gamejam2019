@@ -826,6 +826,7 @@ GameObject:
   - component: {fileID: 1732442112}
   - component: {fileID: 1732442111}
   - component: {fileID: 1732442113}
+  - component: {fileID: 1732442115}
   - component: {fileID: 1732442114}
   m_Layer: 8
   m_Name: Player
@@ -974,6 +975,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &1732442115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732442107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2db3edea456f8545a8ba2d8a165b470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 1953653856696056, guid: 6d45db3f3651a534fb3fc66d0f0052f3, type: 2}
+  fireLength: 1
 --- !u!4 &1928869634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4850258776138544, guid: e2e9260805ec6d14aaa5280632895e95,

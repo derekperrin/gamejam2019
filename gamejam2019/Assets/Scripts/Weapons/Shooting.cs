@@ -9,16 +9,18 @@ public class Shooting : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-    virtual public void Shoot(GameObject origin)
+    virtual public void Shoot()
     {
-        GameObject laser = GameObject.Instantiate(this.laser, this.gameObject.GetComponent<Transform>(), true);
+        Vector3 startPosition = this.gameObject.GetComponent<Transform>().position;
+        GameObject laser = GameObject.Instantiate(this.laser, new Vector3(startPosition.x, startPosition.y, startPosition.z), Quaternion.identity);
+        laser.SendMessage("Move", new Vector2(0, 1));
     }
 }
