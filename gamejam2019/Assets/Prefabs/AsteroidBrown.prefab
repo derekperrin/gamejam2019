@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114790366651397626}
   - component: {fileID: 95735795595728116}
   - component: {fileID: 114837889844237632}
+  - component: {fileID: 114170861169471276}
   m_Layer: 10
   m_Name: AsteroidBrown
   m_TagString: Untagged
@@ -108,6 +109,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114170861169471276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689546321659984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 50
+  minDamage: 50
 --- !u!114 &114790366651397626
 MonoBehaviour:
   m_ObjectHideFlags: 1
