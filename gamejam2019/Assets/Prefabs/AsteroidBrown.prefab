@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 95735795595728116}
   - component: {fileID: 114837889844237632}
   - component: {fileID: 114170861169471276}
+  - component: {fileID: 114614347191004562}
+  - component: {fileID: 114894082218953848}
   m_Layer: 10
   m_Name: AsteroidBrown
   m_TagString: Untagged
@@ -39,8 +41,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1689546321659984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.964426, y: 0.41851056, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.46, y: 3.76, z: -13}
   m_LocalScale: {x: 4.035462, y: 3.7328024, z: 4.035462}
   m_Children: []
   m_Father: {fileID: 0}
@@ -123,6 +125,19 @@ MonoBehaviour:
   currentDamage: 50
   maxDamage: 50
   minDamage: 50
+--- !u!114 &114614347191004562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689546321659984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaa15c95acd8ac41bf2d84fae7844ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0, y: -3}
+  asteroidInitAcceleration: 0
 --- !u!114 &114790366651397626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,6 +167,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 0, y: 0}
   asteroidInitAcceleration: 0
+--- !u!114 &114894082218953848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689546321659984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c42807801bc614cab73ade32cef9e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDamage: 50
+  maxDamage: 0
+  minDamage: 0
 --- !u!212 &212324834260632888
 SpriteRenderer:
   m_ObjectHideFlags: 1
